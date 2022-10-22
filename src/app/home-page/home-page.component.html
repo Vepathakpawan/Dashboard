@@ -1,0 +1,31 @@
+
+
+<div>
+    <div class="banner-section">
+        <h1>Maximize your efficency. Get fast result</h1>
+<div class="container">
+<div class="tab-section">
+<ul class="Routing-section">
+    <li>
+        <a  class="tab-link  " id="tab1"  
+     (click)="tabChange('tab1')"   >Running Conditons</a>
+        
+    </li>
+    <li>
+        <a class="tab-link" id="tab2"  (click)="tabChange('tab2')" >  Machine Selections</a>
+    </li>
+</ul>
+<div >
+    <div *ngIf="id === 'tab1' "  >
+        <app-running-condition></app-running-condition>
+    </div>
+    
+<div  *ngIf="id === 'tab2' ">
+    <app-machine-selections></app-machine-selections>
+</div>
+
+</div>
+</div>
+</div>
+    </div>
+</div>
